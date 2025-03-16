@@ -74,15 +74,7 @@ nav ul li a:hover {
     text-align: center;
     width: 200px;
 }
-.categoria img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-.categoria img:hover {
-    transform: scale(1.1);
-}
+
 
 /* ----- ESTILOS RESPONSIVOS ----- */
 @media (max-width: 768px) {
