@@ -102,3 +102,15 @@ nav ul li a:hover {
 
 
 
+.subcategoria img {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    width: 500px; /* Ancho fijo */
+    height: 300px; /* Alto fijo */
+    object-fit: cover; /* Hace que la imagen llene el espacio sin deformarse */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out; /* Animación al pasar el mouse */
+}
+
+.subcategoria img:hover {
+    transform: scale(1.1); /* Hace un pequeño zoom al pasar el mouse */
+}
