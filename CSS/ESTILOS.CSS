@@ -109,6 +109,7 @@ nav ul li a:hover {
     object-fit: cover; /* Hace que la imagen llene el espacio sin deformarse */
     border-radius: 10px; /* Bordes redondeados */
     transition: transform 0.3s ease-in-out; /* Animación al pasar el mouse */
+    margin-left: 40px; /* Añadir margen izquierdo */
 }
 
 .subcategoria img:hover {
