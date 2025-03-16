@@ -114,3 +114,27 @@ nav ul li a:hover {
 .subcategoria img:hover {
     transform: scale(1.1); /* Hace un pequeño zoom al pasar el mouse */
 }
+
+.subcategoria {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* Espaciado entre la imagen y el texto */
+}
+
+.texto p {
+    text-align: justify;
+    max-width: 500px; /* Limita el ancho del texto */
+}
+
+
+/* Media query para dispositivos con un ancho máximo de 768px (como móviles) */
+@media (max-width: 768px) {
+    .subcategoria {
+        flex-direction: column; /* Coloca la imagen y el texto en columna */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .subcategoria img {
+        margin-bottom: 20px; /* Agrega espacio entre la imagen y el texto */
+    }
+}
