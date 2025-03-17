@@ -1,27 +1,33 @@
 header {
     background: url('../img/banner.png') no-repeat center center/cover;
-    height: 200px; /* Altura del encabezado */
+    height: 200px; 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
     font-family: bungee;
     color: #f2f4f4;
     font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 33%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
-h2 {
-    margin: 0;
-    padding: 0;
+.slogan {
     font-family: montserrat;
     font-weight: 100;
     color: #f2f4f4;
     font-size: 24px;
+    position: absolute;
+    top: 100px;
+    left: 43%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
+
 
 body {
     font-family: montserrat;
@@ -29,22 +35,36 @@ body {
     text-align: center;
     background-color: #15173b;
     color: #f2f4f4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding: 0;
 }
 
 .contenido {
     margin: 50px;
 }
 
+.titulo-contenido {
+    font-family: montserrat;
+    font-weight: 600;
+    color: #f2f4f4;
+    font-size: 30px;
+}
+
+main {
+    flex: 1;
+}
+
 footer {
     background-color: #876CC2;
     color: #111452;
-    padding: 2px;
-    margin-top: auto;
+    padding: 3px;
     font-family: montserrat;
     font-weight: 300;
+    text-align: center;
 }
+
 /* ----- ESTILOS PARA EL MENÚ ----- */
 nav {
     background-color: #876CC2;
@@ -87,6 +107,21 @@ nav ul li a:hover {
     width: 200px;
 }
 
+h2 {
+    font-family: montserrat;
+    font-weight: 300;
+    color: #f2f4f4;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+h3 {
+    font-family: montserrat;
+    font-weight: 600;
+    color: #f2f4f4;
+    font-size: 20px;
+    margin: 20px 0;
+}
 
 /* ----- ESTILOS RESPONSIVOS ----- */
 @media (max-width: 768px) {
@@ -137,6 +172,7 @@ nav ul li a:hover {
 .texto p {
     text-align: justify;
     max-width: 500px; /* Limita el ancho del texto */
+    font-family: montserrat;
 }
 
 
