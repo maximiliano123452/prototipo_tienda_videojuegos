@@ -65,7 +65,7 @@ footer {
     text-align: center;
 }
 
-/* ----- ESTILOS PARA EL MENÚ ----- */
+ /*MENU*/ 
 nav {
     background-color: #876CC2;
     overflow: hidden;
@@ -94,7 +94,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* ----- ESTILOS PARA LAS CATEGORÍAS ----- */
+/*CATEGORIAS*/
 .categorias {
     display: flex;
     flex-wrap: wrap;
@@ -123,7 +123,7 @@ h3 {
     margin: 20px 0;
 }
 
-/* ----- ESTILOS RESPONSIVOS ----- */
+/*RESPONSIVOS*/
 @media (max-width: 768px) {
     .categorias {
         flex-direction: column;
@@ -133,57 +133,55 @@ h3 {
         width: 150px;
     }
 }
-/* ----- AJUSTAR TAMAÑO DE LAS IMÁGENES ----- */
+/*TAMAÑO IMAGENES*/
 .categoria img {
     border: 3px solid #111452;
-    width: 150px; /* Ancho fijo */
-    height: 150px; /* Alto fijo */
-    object-fit: cover; /* Hace que la imagen llene el espacio sin deformarse */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s ease-in-out; /* Animación al pasar el mouse */
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out; /*animacion al pasar el mouse*/ 
 }
 
 .categoria img:hover {
-    transform: scale(1.1); /* Hace un pequeño zoom al pasar el mouse */
+    transform: scale(1.1); 
 }
 
 
 
 .subcategoria img {
     border: 3px solid rgba(255, 255, 255, 0.2);
-    width: 500px; /* Ancho fijo */
-    height: 300px; /* Alto fijo */
-    object-fit: cover; /* Hace que la imagen llene el espacio sin deformarse */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s ease-in-out; /* Animación al pasar el mouse */
-    margin-left: 40px; /* Añadir margen izquierdo */
+    width: 500px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out; 
+    margin-left: 40px; 
 }
 
 .subcategoria img:hover {
-    transform: scale(1.1); /* Hace un pequeño zoom al pasar el mouse */
+    transform: scale(1.1); 
 }
 
 .subcategoria {
     display: flex;
     align-items: center;
-    gap: 60px; /* Espaciado entre la imagen y el texto */
+    gap: 60px; 
 }
 
 .texto p {
     text-align: justify;
-    max-width: 500px; /* Limita el ancho del texto */
+    max-width: 500px; 
     font-family: montserrat;
 }
 
-
-/* Media query para dispositivos con un ancho máximo de 768px (como móviles) */
 @media (max-width: 768px) {
     .subcategoria {
-        flex-direction: column; /* Coloca la imagen y el texto en columna */
-        align-items: center; /* Centra el contenido */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .subcategoria img {
-        margin-bottom: 20px; /* Agrega espacio entre la imagen y el texto */
+        margin-bottom: 20px; 
     }
 }
