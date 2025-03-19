@@ -185,3 +185,114 @@ h3 {
         margin-bottom: 20px; 
     }
 }
+/*FORMULARIO*/
+.contacto-container {
+    text-align: center;
+    background-color: #222b5f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    color: #f2f4f4;
+    font-family: montserrat;
+}
+
+/*CAMPOS*/
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: montserrat;
+    font-weight: 400;
+}
+
+/*CAMPOS FORMULARIO*/
+.contacto-form label {
+    align-self: flex-start;
+    font-weight: 500;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: montserrat;
+    font-weight: 300;
+}
+
+/*MENSAJE*/
+.contacto-form textarea {
+    height: 80px; 
+    resize: none;
+}
+
+/*BOTON ENVIAR*/
+.contacto-form button {
+    background-color: #876CC2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: montserrat;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+.contacto-form button:hover {
+    background-color: #5f449a;
+}
+.registro-form {
+    max-width: 400px;
+    margin: auto;
+    background-color: #876CC2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.registro-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.registro-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.botones button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botones button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.botones button[type="reset"] {
+    background-color: #FF5733;
+    color: white;
+}
+
+
