@@ -294,5 +294,101 @@ h3 {
     background-color: #FF5733;
     color: white;
 }
+/*FORMULARIO REGISTRO*/
+.registro-form {
+    max-width: 500px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #5f449a; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+.campos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.campo {
+    flex: 1;
+    min-width: 48%; 
+}
+
+.registro-form label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #f2f4f4;
+}
+
+.registro-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #876CC2;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.terminos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.terminos a {
+    color: #876CC2;
+    text-decoration: none;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.botones button {
+    background-color: #876CC2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48%;
+}
+
+.botones button:hover {
+    background-color: #5f449a;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #876CC2;
+    text-decoration: none;
+}
+
+/*RESPONSIVE PARA PANTALLAS PEQUEÑAS(LOS CAMPOS SE VERAN EN 1 LINEA)*/
+@media (max-width: 600px) {
+    .campo {
+        min-width: 100%;
+    }
+}
+
+
+
+
+
+
+
 
 
