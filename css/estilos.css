@@ -28,6 +28,37 @@ h1 {
     white-space: nowrap;
 }
 
+header {
+    background: url('../img/banner.png') no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    position: relative;
+    justify-content: center; /* Centrar los elementos */
+    align-items: flex-start; /* Alinea los elementos al principio */
+    padding-top: 20px; /* Agregar espacio en la parte superior */
+}
+
+h1 {
+    font-family: 'Bungee', sans-serif; 
+    color: #f2f4f4;
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: #f2f4f4;
+    font-size: 24px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
 
 body {
     font-family: montserrat;
@@ -133,6 +164,14 @@ h3 {
         width: 150px;
     }
 }
+
+
+
+
+
+
+
+
 /*TAMAÑO IMAGENES*/
 .categoria img {
     border: 3px solid #111452;
