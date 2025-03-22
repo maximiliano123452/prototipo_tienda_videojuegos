@@ -146,6 +146,7 @@ h2 {
     margin: 30px 0;
 }
 
+
 h3 {
     font-family: montserrat;
     font-weight: 600;
@@ -163,8 +164,58 @@ h3 {
     .categoria img {
         width: 150px;
     }
+    header {
+        height: 150px; /* Reducir altura del header */
+    }
+
+    h1 {
+        font-size: 30px; /* Reducir tamaño de la fuente */
+        top: 15%; /* Ajustar posición en pantallas pequeñas */
+    }
+
+    .slogan {
+        font-size: 18px; /* Reducir tamaño de la fuente */
+        top: 75%; /* Ajustar posición del slogan */
+    }
+
+    h2 {
+        font-size: 24px; /* Reducir tamaño de la fuente en pantallas más pequeñas */
+        margin: 10px 0; /* Reducir el margen */
+    }
+
 }
 
+
+/* Media query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .categorias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoria img {
+        width: 120px; /* Reducir aún más el tamaño de las imágenes */
+    }
+
+    header {
+        height: 130px; /* Reducir aún más la altura del header */
+    }
+
+    h1 {
+        font-size: 25px; /* Reducir más el tamaño del título */
+        top: 20%; /* Ajustar la posición */
+    }
+
+    .slogan {
+        font-size: 16px; /* Reducir el tamaño del eslogan */
+        top: 80%; /* Ajustar la posición del eslogan */
+    }
+
+    h2 {
+        font-size: 20px; /* Reducir el tamaño del h2 */
+        margin: 5px 0; /* Ajustar el margen para más espacios pequeños */
+    }
+}
 
 
 
