@@ -1,46 +1,25 @@
-header {
-    background: url('../img/banner.png') no-repeat center center/cover;
-    height: 200px; 
-    display: flex;
-    position: relative;
+:root {
+    --violeta-suave: #b29ddb;
+    --violeta-oscuro: #876CC2;
+    --color-fondo: #15173b;
+    --color-texto: #f2f4f4;
+    --color-secundario: #111452;
 }
 
-h1 {
-    font-family: bungee; 
-    color: #f2f4f4;
-    font-size: 50px;
-    position: absolute;
-    top: 10px;
-    left: 33%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-}
-
-.slogan {
-    font-family: montserrat;
-    font-weight: 100;
-    color: #f2f4f4;
-    font-size: 24px;
-    position: absolute;
-    top: 100px;
-    left: 43%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-}
-
+/*HEADER*/
 header {
     background: url('../img/banner.png') no-repeat center center/cover;
     height: 200px;
     display: flex;
     position: relative;
-    justify-content: center; /* Centrar los elementos */
-    align-items: flex-start; /* Alinea los elementos al principio */
-    padding-top: 20px; /* Agregar espacio en la parte superior */
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
 }
 
 h1 {
-    font-family: 'Bungee', sans-serif; 
-    color: #f2f4f4;
+    font-family: 'Bungee', sans-serif;
+    color: var(--color-texto);
     font-size: 50px;
     position: absolute;
     top: 10%;
@@ -48,10 +27,11 @@ h1 {
     transform: translateX(-50%);
     white-space: nowrap;
 }
+
 .slogan {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    color: #f2f4f4;
+    color: var(--color-texto);
     font-size: 24px;
     position: absolute;
     top: 60%;
@@ -60,66 +40,61 @@ h1 {
     white-space: nowrap;
 }
 
+/*BODY*/
 body {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
-    background-color: #15173b;
-    color: #f2f4f4;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
-.contenido {
-    margin: 50px;
-}
-
-.titulo-contenido {
-    font-family: montserrat;
-    font-weight: 600;
-    color: #f2f4f4;
-    font-size: 30px;
-}
-
 main {
     flex: 1;
 }
 
+/*FOOTER*/
 footer {
-    background-color: #876CC2;
-    color: #111452;
+    background-color: var(--violeta-oscuro);
+    color: var(--color-secundario);
     padding: 3px;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-align: center;
 }
 
- /*MENU*/ 
+/*MENU*/
 nav {
-    background-color: #876CC2;
+    background-color: var(--violeta-oscuro);
     overflow: hidden;
     text-align: center;
     padding: 10px 0;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
     transition: background 0.3s ease-in-out;
 }
+
 nav ul li a {
     text-decoration: none;
-    color: #f2f4f4;
+    color: var(--color-texto);
     font-weight: bold;
     padding: 10px 15px;
     transition: 0.3s;
 }
+
 nav ul li a:hover {
     background-color: #5f449a;
     border-radius: 5px;
@@ -133,24 +108,24 @@ nav ul li a:hover {
     gap: 20px;
     padding: 20px;
 }
+
 .categoria {
     text-align: center;
     width: 200px;
 }
 
 h2 {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: #f2f4f4;
+    color: var(--color-texto);
     font-size: 30px;
     margin: 30px 0;
 }
 
-
 h3 {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #f2f4f4;
+    color: var(--color-texto);
     font-size: 20px;
     margin: 20px 0;
 }
@@ -165,28 +140,25 @@ h3 {
         width: 150px;
     }
     header {
-        height: 150px; /* Reducir altura del header */
+        height: 150px;
     }
 
     h1 {
-        font-size: 30px; /* Reducir tamaño de la fuente */
-        top: 15%; /* Ajustar posición en pantallas pequeñas */
+        font-size: 30px;
+        top: 15%;
     }
 
     .slogan {
-        font-size: 18px; /* Reducir tamaño de la fuente */
-        top: 75%; /* Ajustar posición del slogan */
+        font-size: 18px;
+        top: 75%;
     }
 
     h2 {
-        font-size: 24px; /* Reducir tamaño de la fuente en pantallas más pequeñas */
-        margin: 10px 0; /* Reducir el margen */
+        font-size: 24px;
+        margin: 10px 0;
     }
-
 }
 
-
-/* Media query para pantallas muy pequeñas (móviles) */
 @media (max-width: 480px) {
     .categorias {
         flex-direction: column;
@@ -194,203 +166,142 @@ h3 {
     }
 
     .categoria img {
-        width: 120px; /* Reducir aún más el tamaño de las imágenes */
+        width: 120px;
     }
 
     header {
-        height: 130px; /* Reducir aún más la altura del header */
+        height: 130px;
     }
 
     h1 {
-        font-size: 25px; /* Reducir más el tamaño del título */
-        top: 20%; /* Ajustar la posición */
+        font-size: 25px;
+        top: 20%;
     }
 
     .slogan {
-        font-size: 16px; /* Reducir el tamaño del eslogan */
-        top: 80%; /* Ajustar la posición del eslogan */
+        font-size: 16px;
+        top: 80%;
     }
 
     h2 {
-        font-size: 20px; /* Reducir el tamaño del h2 */
-        margin: 5px 0; /* Ajustar el margen para más espacios pequeños */
+        font-size: 20px;
+        margin: 5px 0;
     }
 }
 
-
-
-
-
-
-
 /*TAMAÑO IMAGENES*/
 .categoria img {
-    border: 3px solid #111452;
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 10px; 
-    transition: transform 0.3s ease-in-out; /*animacion al pasar el mouse*/ 
+    border: 3px solid var(--color-secundario);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .categoria img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
-
-
 
 .subcategoria img {
     border: 3px solid rgba(255, 255, 255, 0.2);
-    width: 500px; 
-    height: 300px; 
-    object-fit: cover; 
-    border-radius: 10px; 
-    transition: transform 0.3s ease-in-out; 
-    margin-left: 40px; 
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 40px;
 }
 
 .subcategoria img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .subcategoria {
     display: flex;
     align-items: center;
-    gap: 60px; 
+    gap: 60px;
 }
 
 .texto p {
     text-align: justify;
-    max-width: 500px; 
-    font-family: montserrat;
+    max-width: 500px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {
     .subcategoria {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .subcategoria img {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 }
+
 /*FORMULARIOS*/
-.contacto-container {
+.contacto-container, .registro-container {
     text-align: center;
     background-color: #222b5f;
     padding: 20px;
     border-radius: 10px;
     width: 50%;
     margin: auto;
-    color: #f2f4f4;
-    font-family: montserrat;
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif;
 }
 
-.registro-container {
-    text-align: center;
-    background-color: #222b5f;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    margin: auto;
-    color: #f2f4f4;
-    font-family: montserrat;
-}
-
-/*CAMPOS*/
-.contacto-form {
+.contacto-form, .registro-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
-.registro-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    font-family: montserrat;
-    font-weight: 400;
-}
-
-
-
-/*CAMPOS FORMULARIO*/
-.contacto-form label {
+.contacto-form label, .registro-form label {
     align-self: flex-start;
     font-weight: 500;
 }
 
-.contacto-form input,
-.contacto-form textarea {
+.contacto-form input, .contacto-form textarea, .registro-form input, .registro-form textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
 
-.registro-form input,
-.registro-form textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    box-sizing: border-box;
-    font-family: montserrat;
-    font-weight: 300;
-}
-
-/*MENSAJE*/
-.contacto-form textarea {
-    height: 80px; 
+.contacto-form textarea, .registro-form textarea {
+    height: 80px;
     resize: none;
 }
 
-.registro-form textarea {
-    height: 80px; 
-    resize: none;
-}
-
-/*BOTON ENVIAR*/
-.contacto-form button {
-    background-color: #876CC2;
+.contacto-form button, .registro-form button {
+    background-color: var(--violeta-oscuro);
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     transition: background 0.3s ease-in-out;
 }
 
-.registro-form button {
-    background-color: #876CC2;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: montserrat;
-    font-size: 18px;
-    transition: background 0.3s ease-in-out;
-}
-
-.contacto-form button:hover {
+.contacto-form button:hover, .registro-form button:hover {
     background-color: #5f449a;
 }
 
-.registro-form button:hover {
-    background-color: #5f449a;
+/*MENSAJES*/
+.contacto-form textarea, .registro-form textarea {
+    height: 80px;
+    resize: none;
 }
 
 .registro-form label {
@@ -434,19 +345,19 @@ h3 {
 
 .enlace-blanco {
     color: white;
-    text-decoration: none; /* Si también quieres quitar el subrayado */
+    text-decoration: none;
 }
 
 .enlace-blanco:hover {
-    text-decoration: underline; /* Si deseas subrayar al pasar el mouse */
+    text-decoration: underline;
 }
 
-/*FORMULARIO REGISTRO*/
+/*REGISTRO*/
 .registro-form {
     max-width: 500px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px;
-    background-color: #5f449a; 
+    background-color: #5f449a;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     text-align: left;
@@ -460,21 +371,21 @@ h3 {
 
 .campo {
     flex: 1;
-    min-width: 48%; 
+    min-width: 48%;
 }
 
 .registro-form label {
     display: block;
     font-size: 16px;
     margin-top: 10px;
-    color: #f2f4f4;
+    color: var(--color-texto);
 }
 
 .registro-form input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #876CC2;
+    border: 1px solid var(--violeta-oscuro);
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -488,18 +399,12 @@ h3 {
 }
 
 .terminos a {
-    color: #876CC2;
+    color: var(--violeta-oscuro);
     text-decoration: none;
 }
 
-.botones {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
 .botones button {
-    background-color: #876CC2;
+    background-color: var(--violeta-oscuro);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -520,26 +425,30 @@ h3 {
 }
 
 .login-link a {
-    color: #876CC2;
+    color: var(--violeta-oscuro);
     text-decoration: none;
 }
 
-/*RESPONSIVE PARA PANTALLAS PEQUEÑAS(LOS CAMPOS SE VERAN EN 1 LINEA)*/
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/*RESPONSIVO PARA PANTALLAS PEQUEÑAS*/
 @media (max-width: 600px) {
     .campo {
         min-width: 100%;
     }
 }
-/*FONDO FORMULARIO DE REGISTRO*/
+
 .container.formulario {
-    background-color: #6a5acd; 
+    background-color: #6a5acd;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
-/*FONDO FORMULARIO REGISTRO*/
+
 .registro-form {
-    background-color: #b29ddb; 
+    background-color: #b29ddb;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -547,27 +456,12 @@ h3 {
     font-weight: 500;
 }
 
-
-
-:root {
-    --violeta-suave: #b29ddb;
-    --violeta-oscuro: #876CC2;
-  }
-
-
-  .form-label.required::after {
+.form-label.required::after {
     content: " *";
     color: red;
-  }
+}
 
-  .registro-form {
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .btn-custom {
+.btn-custom {
     background-color: var(--violeta-oscuro);
     color: white;
     border: none;
@@ -575,34 +469,16 @@ h3 {
     padding: 10px 20px;
     border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+}
 
-  .btn-custom:hover {
+.btn-custom:hover {
     background-color: var(--violeta-suave);
     color: #111452;
     transform: scale(1.05);
-  }
+}
 
-  .login-link {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .login-link a {
-    color: var(--violeta-oscuro);
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  .login-link a:hover {
-    text-decoration: underline;
-  }
-
-
-  .form-control {
+.form-control {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
 }
-
-
