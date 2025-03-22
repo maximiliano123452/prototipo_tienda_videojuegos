@@ -341,6 +341,16 @@ h3 {
     background-color: #FF5733;
     color: white;
 }
+
+.enlace-blanco {
+    color: white;
+    text-decoration: none; /* Si también quieres quitar el subrayado */
+}
+
+.enlace-blanco:hover {
+    text-decoration: underline; /* Si deseas subrayar al pasar el mouse */
+}
+
 /*FORMULARIO REGISTRO*/
 .registro-form {
     max-width: 500px;
@@ -499,7 +509,10 @@ h3 {
   }
 
 
-
-
+  .form-control {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
 
 

@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juega con Nosotros - Registro</title>
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juega con Nosotros - Contáctanos </title> 
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header>
         <h1>Juega con Nosotros</h1>
-        <h2 class="slogan">Únete y accede a recompensas únicas y exclusivas</h2>
+        <h2 class="slogan">Descubre los mejores juegos al mejor precio</h2>
     </header>
     <nav>
         <ul>
@@ -27,114 +22,66 @@
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="registro.html">Registro</a></li>
         </ul>
-    </nav>
+    </nav>    
     
     <div class="registro-container">
-      <div class="container mt-4">
-        <h2 class="mb-4 text-center">Formulario de Registro</h2>
-        <form id="registroForm" class="registro-form mx-auto" style="max-width: 600px">
-          <div class="mb-3">
-            <label for="nombre" class="form-label required">Nombre Completo</label>
-            <input type="text" class="form-control" id="nombre" required />
-          </div>
-          <div class="mb-3">
-            <label for="usuario" class="form-label required">Nombre de Usuario</label>
-            <input type="text" class="form-control" id="usuario" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label required">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" required />
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label required">Contraseña</label>
-            <input type="password" class="form-control" id="password" required />
-          </div>
-          <div class="mb-3">
-            <label for="password2" class="form-label required">Repetir Contraseña</label>
-            <input type="password" class="form-control" id="password2" required />
-          </div>
-          <div class="mb-3">
-            <label for="fechaNacimiento" class="form-label required">Fecha de Nacimiento</label>
-            <input type="date" class="form-control" id="fechaNacimiento" required />
-          </div>
-          <div class="mb-3">
-            <label for="direccion" class="form-label">Dirección de Despacho (Opcional)</label>
-            <input type="text" class="form-control" id="direccion" />
-          </div>
-          <div class="form-check mb-3">
-            <input type="checkbox" class="form-check-input" id="terminos" required />
-            <label class="form-check-label required" for="terminos">Acepto los términos y condiciones</label>
-          </div>
-          <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-custom">Registrarse</button>
-            <button type="reset" class="btn btn-secondary">Limpiar</button>
-          </div>
-          <div class="login-link text-center mt-3">
-            <p>¿Ya tienes cuenta? <a href="#">Inicia sesión aquí</a></p>
-          </div>
-        </form>
-      </div>
-    </div>
-  
-    <script>
-      $(document).ready(function () {
-        $('#registroForm').on('submit', function (event) {
-          event.preventDefault();
-  
-          var nombre = $('#nombre').val().trim();
-          var usuario = $('#usuario').val().trim();
-          var email = $('#email').val().trim();
-          var password = $('#password').val().trim();
-          var password2 = $('#password2').val().trim();
-          var fechaNacimiento = $('#fechaNacimiento').val();
-          var terminos = $('#terminos').is(':checked');
-  
-          var errores = [];
-  
-          if (!nombre || !usuario || !email || !password || !password2 || !fechaNacimiento) {
-            errores.push('Todos los campos obligatorios deben ser completados.');
-          }
-  
-          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (!emailRegex.test(email)) {
-            errores.push('El formato del correo electrónico es inválido.');
-          }
-  
-          if (password !== password2) {
-            errores.push('Las contraseñas no coinciden.');
-          }
-  
-          var passwordRegex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,18}$/;
-          if (!passwordRegex.test(password)) {
-            errores.push('La contraseña debe tener entre 6 y 18 caracteres, incluir al menos una letra mayúscula y un número.');
-          }
-  
-          var fechaNacimientoDate = new Date(fechaNacimiento);
-          var hoy = new Date();
-          var edad = hoy.getFullYear() - fechaNacimientoDate.getFullYear();
-          var mes = hoy.getMonth() - fechaNacimientoDate.getMonth();
-          if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimientoDate.getDate())) {
-            edad--;
-          }
-          if (edad < 13) {
-            errores.push('Debes tener al menos 13 años para registrarte.');
-          }
-  
-          if (!terminos) {
-            errores.push('Debes aceptar los términos y condiciones.');
-          }
-  
-          if (errores.length > 0) {
-            alert(errores.join('\n'));
-          } else {
-            alert('Formulario enviado exitosamente.');
-          }
-        });
-      });
-    </script>
+        <div class="contacto-container">
+            <h2 class="mb-4 text-center">Formulario de Registro</h2>
+        
+            <form id="registroForm" class="contacto-form mx-auto" style="max-width: 600px">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label required">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" required placeholder="Ingresa tu nombre" />
+                </div>
+                <div class="mb-3">
+                    <label for="usuario" class="form-label required">Nombre de Usuario</label>
+                    <input type="text" class="form-control" id="usuario" required placeholder="Ingresa tu nombre de usuario" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label required">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required placeholder="tucorreo@ejemplo.com" />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label required">Contraseña</label>
+                    <input type="password" class="form-control" id="password" required placeholder="Ingresa tu contraseña" />
+                </div>
+                <div class="mb-3">
+                    <label for="password2" class="form-label required">Repetir Contraseña</label>
+                    <input type="password" class="form-control" id="password2" required placeholder="Repite tu contraseña" />
+                </div>
+                <div class="mb-3">
+                    <label for="fechaNacimiento" class="form-label required">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" required />
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección de Despacho (Opcional)</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección de despacho (opcional)" />
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="terminos" required />
+                    <label class="form-check-label required" for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-custom">Registrarse</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+                <div class="login-link text-center mt-3">
+                    <p>¿Ya tienes cuenta? <a href="#">Inicia sesión aquí</a></p>
+                </div>
+            </form>
+        </div>
+    
+
+    </section>
+    <footer>
+        <p>&copy; 2025 Juega con Nosotros. Todos los derechos reservados.</p>
+        <p>Este proyecto fue desarrollado por el Grupo 4 de Programación Web, Duoc UC 2025.</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    
 </body>
-<footer>
-    <p>&copy; 2025 Juega con Nosotros. Todos los derechos reservados.</p>
-    <p>Este proyecto fue desarrollado por el Grupo 4 de Programación Web, Duoc UC 2025.</p>
-</footer>
 </html>
+
+
+
