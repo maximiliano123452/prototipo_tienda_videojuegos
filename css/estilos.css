@@ -254,6 +254,13 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.contenido {
+    text-align: center;
+    width: 360px; 
+    margin: 0 auto; 
+}
+
+
 @media (max-width: 768px) {
     .subcategoria {
         flex-direction: column;
@@ -494,6 +501,7 @@ h3 {
     padding: 10px 20px;
     border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 10px;
 }
 
 .btn-custom:hover {
@@ -507,3 +515,8 @@ h3 {
     max-width: 100%;
     box-sizing: border-box;
 }
+
+.btn-custom, .btn-secondary {
+    margin-bottom: 10px;
+}
+
