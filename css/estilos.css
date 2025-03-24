@@ -272,6 +272,31 @@ h3 {
 
 }
 
+@media (max-width: 1024px) {
+    header {
+        background-size: contain; 
+        background-position: center;
+        height: 130px;
+    }
+    h1 {
+        font-size: 30px;
+        top: 30%;
+        margin: 10px;
+    }
+
+    .slogan {
+        font-size: 18px;
+        top: 75%;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: -20px 0;
+        word-wrap: break-word;
+    }
+
+}
+
 /*TAMAÑO IMAGENES*/
 .categoria img {
     border: 3px solid var(--color-secundario);
