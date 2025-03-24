@@ -279,9 +279,13 @@ h3 {
     padding: 20px;
     border-radius: 10px;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     color: var(--color-texto);
     font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word; /* Permite que el texto se ajuste */
+    overflow-wrap: break-word; /* Alternativa para navegadores modernos */
+    max-width: 90%; /* Evita que el contenido sea más ancho que la pantalla */
+    
 }
 
 .contacto-form, .registro-form {
