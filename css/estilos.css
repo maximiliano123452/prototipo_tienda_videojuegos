@@ -256,8 +256,8 @@ h3 {
 
 .contenido {
     text-align: center;
-    width: 360px; 
-    margin: 0 auto; 
+    width: auto; 
+    margin: 15px auto; 
 }
 
 
