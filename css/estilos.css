@@ -168,6 +168,13 @@ h3 {
         padding: 0 20px;
         text-align: center; 
     }
+    .contenido {
+        text-align: center;
+        margin: 15px auto; 
+        width: auto; 
+        padding: 10px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -209,8 +216,15 @@ h3 {
         margin: -10px 0;
     }
     .texto p {
-        padding: 0 20px; /* Añade 20px de espacio a los lados */
+        padding: 10px 20px; 
         text-align: center; 
+    }
+
+    .contenido {
+        text-align: center;
+        margin: 15px auto; 
+        width: auto; 
+        padding: 10px;
     }
 }
 
