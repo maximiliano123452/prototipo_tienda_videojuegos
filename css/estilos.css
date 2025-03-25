@@ -153,18 +153,18 @@ h3 {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 25px;
         top: 30%;
         margin: 20px;
     }
 
     .slogan {
-        font-size: 18px;
+        font-size: 15px;
         top: 75%;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 15px;
         margin: -10px 0;
         word-wrap: break-word;
     }
@@ -223,17 +223,17 @@ h3 {
 
 
     h1 {
-        font-size: 25px;
+        font-size: 20px;
         top: 20%;
     }
 
     .slogan {
-        font-size: 16px;
+        font-size: 14px;
         top: 80%;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 15px;
         margin: -10px 0;
         word-wrap: break-word;
     }
