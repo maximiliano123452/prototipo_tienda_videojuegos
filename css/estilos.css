@@ -22,24 +22,28 @@ header {
 h1 {
     font-family: 'Bungee', sans-serif;
     color: var(--color-texto);
-    font-size: 50px;
+    font-size: 10vw;
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
+    max-width: 90%;
+    text-align: center;
 }
 
 .slogan {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: var(--color-texto);
-    font-size: 24px;
+    font-size: 5vw;
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
+    max-width: 90%; 
+    text-align: center; 
 }
 
 /*BODY*/
@@ -156,11 +160,13 @@ h3 {
         font-size: 25px;
         top: 30%;
         margin: 20px;
+        max-width: 90%;
     }
 
     .slogan {
         font-size: 15px;
         top: 75%;
+        max-width: 90%; 
     }
 
     h2 {
@@ -225,17 +231,21 @@ h3 {
     h1 {
         font-size: 20px;
         top: 20%;
+        max-width: 90%;
     }
 
     .slogan {
         font-size: 14px;
         top: 80%;
+        max-width: 90%;
+        word-wrap: break-word;
     }
 
     h2 {
         font-size: 15px;
         margin: -10px 0;
         word-wrap: break-word;
+        
     }
 
     .contenido {
@@ -279,14 +289,20 @@ h3 {
         height: 130px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 25px;
         top: 30%;
         margin: 10px;
+        width: 90%;
+        padding: 0 10px;
+    
     }
 
     .slogan {
-        font-size: 18px;
+        font-size: 15px;
         top: 75%;
+        max-width: 90%;
+        
+        
     }
 
     h2 {
